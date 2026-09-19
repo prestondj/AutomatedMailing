@@ -1,1 +1,1 @@
-from .LightweightMailing import setup_client
+from .LightweightMailing import setup_client_from_env

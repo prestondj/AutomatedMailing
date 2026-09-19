@@ -1,22 +1,19 @@
 import mailer
-import dotenv
+from os import getenv
 
-def setup_client() -> mailer.MailClient:
+def setup_client_from_env() -> mailer.MailClient:
     """
     Sets up the MailClient using environment variables.
 
     Returns:
         mailer.MailClient: An instance of the MailClient configured with environment variables.
     """
-    # Load environment variables from .env file
-    dotenv.load_dotenv()
-    dotenv_path = dotenv.find_dotenv()
 
     # Retrieve email configuration from environment variables
-    smtp_server = dotenv.get_key(dotenv_path, "MAIL_SERVER")
-    port = int(dotenv.get_key(dotenv_path, "PORT"))
-    sender_email = dotenv.get_key(dotenv_path, "SENDER_EMAIL")
-    sender_password = dotenv.get_key(dotenv_path, "SENDER_PASSWORD")
+    smtp_server = getenv("MAIL_SERVER")
+    port = int(getenv("PORT"))
+    sender_email = getenv("SENDER_EMAIL")
+    sender_password = getenv("SENDER_PASSWORD")
 
     # Create and return a MailClient instance
     return mailer.MailClient(smtp_server, port, sender_email, sender_password)
