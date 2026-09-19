@@ -3,3 +3,9 @@
 
 # ignore virtual environment
 .venv/
+
+# ignore compiled python
+__pycache__/
+
+# ignore tester
+tester.py
