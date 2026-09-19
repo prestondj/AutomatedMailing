@@ -16,9 +16,9 @@ PORT=587
 Initialize the client with:
 
 ```python
-import mailer_setup
+import AutomatedMailing
 
-client = mailer_setup.setup_client()
+client = AutomatedMailing.setup_client()
 ```
 
 `setup_client()` loads the SMTP settings from `.env` and returns a configured `MailClient` instance.

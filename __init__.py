@@ -1,0 +1,1 @@
+from .AutomatedMailing import setup_client
