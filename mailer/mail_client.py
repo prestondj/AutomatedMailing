@@ -15,6 +15,8 @@ class MailClient():
         self.sender_email = sender_email
         self.sender_password = sender_password
 
+    # wrappers of sender.send_email and send_batch.
+
     def send_email(self, recipient: str, subject: str, body: str) -> bool:
         """
         Sends a single email to the specified recipient.
