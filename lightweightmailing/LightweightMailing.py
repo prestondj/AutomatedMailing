@@ -1,4 +1,4 @@
-import mailer as mailer
+from . import mailer
 from os import getenv
 
 def setup_client() -> mailer.MailClient:
