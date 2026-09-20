@@ -10,10 +10,10 @@ def setup_client() -> mailer.MailClient:
     """
 
     # Retrieve email configuration from environment variables
-    smtp_server = getenv("MAIL_SERVER")
-    port = int(getenv("PORT"))
-    sender_email = getenv("SENDER_EMAIL")
-    sender_password = getenv("SENDER_PASSWORD")
+    smtp_server = getenv("LIGHTWEIGHT_MAILER_MAIL_SERVER")
+    port = int(getenv("LIGHTWEIGHT_MAILER_PORT"))
+    sender_email = getenv("LIGHTWEIGHT_MAILER_SENDER_EMAIL")
+    sender_password = getenv("LIGHTWEIGHT_MAILER_SENDER_PASSWORD")
 
     # Create and return a MailClient instance
     return mailer.MailClient(smtp_server, port, sender_email, sender_password)
