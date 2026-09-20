@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "lightweightmailing"
-version = "0.1.0"
+version = "0.2.0"
 description = "A lightweight SMTP wrapper for the simple sending of single and batched personalised emails."
 readme = "README.md"
 authors = [
