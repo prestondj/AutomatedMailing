@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "LightweightMailing"
+version = "0.1.0"
+description = "A lightweight SMTP wrapper for the simple sending of single and batched personalised emails."
+readme = "README.md"
+authors = [
+    {name = "PrestonDJ"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+license = "MIT"
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+homepage = "https://github.com/prestondj/LightweightMailing"
