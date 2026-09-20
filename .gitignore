@@ -7,5 +7,10 @@
 # ignore compiled python
 __pycache__/
 
+# ignore build and distribution
+dist/
+build/
+*.egg-info/
+
 # ignore tester
 tester.py
